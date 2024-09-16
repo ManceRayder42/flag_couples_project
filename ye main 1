@@ -1,0 +1,22 @@
+import pygame
+import screen
+from soldier import draw_soldier
+import consts
+
+soldier_ = 4,5
+
+def main():
+    pygame.init()
+    screen_ = screen.create_screen()
+    image = consts.SOLDIER.get_rect(topleft=(10, 10))
+    screen_.blit(consts.SOLDIER, image)
+    print(screen_)
+    while True:
+        for event in pygame.event.get():
+            if event.type == pygame.QUIT:
+                pygame.quit()
+                exit()
+        screen_.blit(consts.SOLDIER, image)
+        pygame.display.flip()
+
+main()
