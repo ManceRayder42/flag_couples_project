@@ -1,0 +1,42 @@
+
+import random
+
+import numpy as np
+import consts
+
+
+def create_matrix():
+    matrix = []
+    for row in range(consts.MATRIX_HEIGHT):
+        matrix.append([])
+        for col in range(consts.MATRIX_WIDTH):
+            matrix[row].append('SAFE')
+    return matrix
+
+
+def print_matrix(matrix):
+    for i in create_matrix():
+        for _ in i:
+            print(_, end=' ')
+        print()
+
+
+def matrix_with_mines(matrix, times):
+    counter = 0
+    mined_matrix = matrix.copy()
+    while counter != times:
+        location_row = random.choice(range(consts.MATRIX_HEIGHT))
+        location_col = random.choice(range(consts.MATRIX_WIDTH - 3))
+        valid_location = True
+        for i in range(3):
+            if mined_matrix[location_row][location_col + i] != 'SAFE':
+                valid_location = False
+                break
+        if valid_location:
+            for j in range(3):
+                mined_matrix[location_row][location_col + j] = 'MINE'
+            counter += 1
+    return mined_matrix
+
+
+print(matrix_with_mines(create_matrix(), 7))
