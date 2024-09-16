@@ -1,0 +1,28 @@
+import pygame
+
+import consts
+
+
+def background(screen):
+    screen.fill(consts.GREEN_BACKGROUND)
+    pygame.display.flip()
+
+
+def drew_bushes():
+    pass
+
+def drew_soldier():
+    pass
+
+def drew_flag():
+    pass
+
+def scan_screen(matrix):
+    pass
+
+
+def create_screen():
+    screen = pygame.display.set_mode(
+        (consts.SCREEN_WIDTH, consts.SCREEN_HEIGHT))
+    background(screen)
+    return screen
