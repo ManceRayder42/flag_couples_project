@@ -1,0 +1,24 @@
+import pygame
+from consts import SQUARE_SIZE, SOLDIER_SIZE, SCREEN_WIDTH, SCREEN_HEIGHT
+
+# Soldier as a dictionary holding its position and image
+soldier = {
+    'x': 0,  # Initial X position (top-left corner)
+    'y': 0,  # Initial Y position (top-left corner)
+    'image': pygame.transform.scale(pygame.image.load("soldier.png"), SOLDIER_SIZE)  # Soldier image
+}
+
+
+def move_soldier(soldier, dx, dy):
+    """
+    Move the soldier by (dx, dy) and ensure it stays within the screen bounds.
+    """
+    soldier['x'] = min(max(soldier['x'] + dx * SQUARE_SIZE, 0), SCREEN_WIDTH - SOLDIER_SIZE[0])
+    soldier['y'] = min(max(soldier['y'] + dy * SQUARE_SIZE, 0), SCREEN_HEIGHT - SOLDIER_SIZE[1])
+
+
+def draw_soldier(screen, soldier):
+    """
+    Draw the soldier on the screen at its current position.
+    """
+    screen.draw_image(soldier['image'], soldier['x'], soldier['y'])
