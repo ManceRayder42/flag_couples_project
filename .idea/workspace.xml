@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b08e1bed-665a-4605-bea7-1bc6296b8ea0" name="Changes" comment="1 consts">
+      <change beforePath="$PROJECT_DIR$/bin/bin/explotion.png" beforeDir="false" afterPath="$PROJECT_DIR$/explotion.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/bin/flag.png" beforeDir="false" afterPath="$PROJECT_DIR$/flag.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/bin/grass.png" beforeDir="false" afterPath="$PROJECT_DIR$/grass.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/bin/injury.png" beforeDir="false" afterPath="$PROJECT_DIR$/injury.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/bin/mine.png" beforeDir="false" afterPath="$PROJECT_DIR$/mine.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/bin/snake.png" beforeDir="false" afterPath="$PROJECT_DIR$/snake.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/bin/soldier (2).png" beforeDir="false" afterPath="$PROJECT_DIR$/soldier (2).png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/bin/soldier.png" beforeDir="false" afterPath="$PROJECT_DIR$/soldier.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/bin/soldier_nigth.png" beforeDir="false" afterPath="$PROJECT_DIR$/soldier_nigth.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/consts.py" beforeDir="false" afterPath="$PROJECT_DIR$/consts.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;yehudarazak&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/ManceRayder42/flag_couples_project&quot;,
+    &quot;accountId&quot;: &quot;f30be343-d89b-45b9-8efe-03a7cb18ee59&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2m8oAtswNz1RoTomUCgojq3d17d" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Python.consts.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/jbt/PycharmProjects/flag_couples_project"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\jbt\PycharmProjects\flag_couples_project" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\jbt\PycharmProjects\flag_couples_project" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-5b207ade9991-746f403e7f0c-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-241.17890.14" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b08e1bed-665a-4605-bea7-1bc6296b8ea0" name="Changes" comment="" />
+      <created>1726467424007</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1726467424007</updated>
+    </task>
+    <task id="LOCAL‎-00001" summary="1 consts">
+      <option name="closed" value="true" />
+      <created>1726472708443</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL‎-00001" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1726472708443</updated>
+    </task>
+    <task id="LOCAL‎-00002" summary="1 consts">
+      <option name="closed" value="true" />
+      <created>1726473153129</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL‎-00002" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1726473153129</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="1 consts" />
+    <option name="LAST_COMMIT_MESSAGE" value="1 consts" />
+  </component>
+</project>

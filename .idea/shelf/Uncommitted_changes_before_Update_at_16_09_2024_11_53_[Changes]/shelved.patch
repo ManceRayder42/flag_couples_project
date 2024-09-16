@@ -1,0 +1,101 @@
+Index: main.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>print('hello there')
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/main.py b/main.py
+--- a/main.py	(revision 855e0c65c73e8bc299b9b7290b562bbd2216071e)
++++ b/main.py	(date 1726476763812)
+@@ -1,1 +1,17 @@
+-print('hello there')
+\ No newline at end of file
++import pygame
++import screen
++
++
++def main():
++    pygame.init()
++    print(screen.create_screen())
++
++
++
++    while True:
++            for event in pygame.event.get():
++                if event.type == pygame.QUIT:
++                    pygame.quit()
++                    exit()
++
++main()
+\ No newline at end of file
+Index: consts.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import pygame\r\n\r\nEXPLOSION = pygame.image.load(\"explotion.png\")\r\nFLAG = pygame.image.load(\"flag.png\")\r\nGRASS = pygame.image.load(\"grass.png\")\r\nMINE = pygame.image.load(\"mine.png\")\r\nSOLDIER = pygame.image.load(\"soldier.png\")\r\nBACKRND  = (0, 255, 0)\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/consts.py b/consts.py
+--- a/consts.py	(revision 855e0c65c73e8bc299b9b7290b562bbd2216071e)
++++ b/consts.py	(date 1726476596691)
+@@ -1,8 +1,18 @@
+ import pygame
+-
++import numpy as np
+ EXPLOSION = pygame.image.load("explotion.png")
+ FLAG = pygame.image.load("flag.png")
+ GRASS = pygame.image.load("grass.png")
+ MINE = pygame.image.load("mine.png")
+ SOLDIER = pygame.image.load("soldier.png")
+-BACKRND  = (0, 255, 0)
++GREEN_BACKGROUND = (2, 48, 32)
++
++# SOLDIER_SIZE = pygame.transform.scale(SOLDIER, (12, 12))
++# FLAG_SIZE = pygame.transform.scale(FLAG,(12,4))
++SCREEN_WIDTH = 1400
++SCREEN_HEIGHT = 700
++
++MATRIX_WIDTH = 50
++MATRIX_HEIGHT = 25
++
++SQUARE_SIZE = SCREEN_WIDTH / MATRIX_WIDTH
+Index: screen.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/screen.py b/screen.py
+new file mode 100644
+--- /dev/null	(date 1726476822148)
++++ b/screen.py	(date 1726476822148)
+@@ -0,0 +1,14 @@
++import pygame
++
++import consts
++
++
++def background(screen):
++    screen.fill(consts.BACKRND)
++    pygame.display.flip()
++
++def create_screen():
++    screen = pygame.display.set_mode(
++        (1200, 800))
++    background(screen)
++    return screen
+\ No newline at end of file
+Index: gamefield.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/gamefield.py b/gamefield.py
+new file mode 100644
+--- /dev/null	(date 1726476240152)
++++ b/gamefield.py	(date 1726476240152)
+@@ -0,0 +1,4 @@
++import numpy as np
++import consts
++
++matrix = np.zeros((consts.MATRIX_WIDTH, consts.MATRIX_HEIGHT))

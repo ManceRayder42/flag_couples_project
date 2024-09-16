@@ -1,5 +1,5 @@
 import pygame
-import numpy as np
+
 EXPLOSION = pygame.image.load("explotion.png")
 FLAG = pygame.image.load("flag.png")
 GRASS = pygame.image.load("grass.png")
