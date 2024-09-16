@@ -1,11 +1,17 @@
 import pygame
 import screen
-import consts
+
+
+def main():
+    pygame.init()
+    print(screen.create_screen())
 
 
 
-while True:
-        for event in pygame.event.get():
-            if event.type == pygame.QUIT:
-                pygame.quit()
-                exit()
+    while True:
+            for event in pygame.event.get():
+                if event.type == pygame.QUIT:
+                    pygame.quit()
+                    exit()
+
+main()
